@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Lakki Reddy;
+  place-items: start;
+  background: url('img/1616036032_18-p-chernii-zvezdnii-fon-22.jpeg') center center / cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+div{
+  display: flex;
+  justify-content: center;
+}
+h1{
+  margin-top: 50px;
+  font-size: 100px;
+  color: aliceblue;
+}
+#step{
+  margin-top: 20px;
+  font-size: 30px;
+  color: aliceblue;
+}
+button{
+  position: absolute;
+  margin-top: 280px;
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+  background: black;
+  color: aliceblue;
+}
+canvas{
+  margin-top: 50px;
+}
+
+@-webkit-keyframes pulsate {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+#step {
+  color: rgb(245,245,245);
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
+}
